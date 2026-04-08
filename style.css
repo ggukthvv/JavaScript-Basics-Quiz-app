@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav_links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    gap: 10px;
+    font-size: 18px;
+    color: rgb(200, 200, 200);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.nav_links a:hover {
+    color: #FCC822;
+    transition: 0.5s ease;
+}
+
+.hidden_btn {
+    display: none;
+}
+
+hr {
+    width: 100%;
+    margin: 10px;
+    color: rgb(200, 200, 200);
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px
+}
+
+.containers_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.cricle {
+    height: 30px;
+    width: 30px;
+    background-color: #FCC822;
+    border-radius: 50px;
+    color: black;
+}
+
+.cricles {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50px;
+    color: black;
+}
+
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #FCC822;
+}
+
+.lines {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(200, 200, 200);
+}
+
+.text {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #FCC822;
+    padding: 20px
+}
+
+.text_heading {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 38px
+}
+
+#questions {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(200, 200, 200);
+    position: relative;
+}
+
+#questions:hover {
+    /* width: 170px;
+    height: 70px; */
+    transition: all 0.5s ease;
+    background-color: #FCC822;
+}
+
+.questions_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+
+#questions p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+#questions span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#btn_previous {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(200, 200, 200);
+    border: none;
+    filter: drop-shadow(3px 3px 3px gray);
+    /* box-shadow: 2px grey blur; */
+}
+
+#btn_previous:hover {
+    filter: drop-shadow(3px 3px 3px gray);
+    width: 170px;
+    height: 70px;
+    transition: all 0.5s ease;
+    /* transition: ; */
+}
+
+#btn_next {
+    width: 150px;
+    height: 50px;
+    background-color: #FCC822;
+    color: white;
+    border: none;
+    filter: drop-shadow(2px 2px 2px #FCC822);
+}
+
+#btn_next:hover {
+    filter: drop-shadow(2px 2px 2px #FCC822);
+    width: 170px;
+    height: 70px;
+    transition: all 0.5s ease;
+}
+
+#btn_skip {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    /* box-shadow: 10px 10px 5px gray; */
+    border: none;
+    color: #FCC822;
+}
+
+#btn_skip:hover {
+    box-shadow: 3px 3px 3px#FCC822;
+    width: 170px;
+    height: 70px;
+    transition: all 0.5s ease;
+}
+
+#buttons_second {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buttons span {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 10px; */
+}
+
+#buttons_icon {
+    /* margin-left: 70px; */
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+@media(max-width:562px) {
+    .nav_links {
+        display: none;
+    }
+
+    .questions_container {
+        flex-wrap: wrap;
+    }
+
+    #buttons {
+        flex-wrap: wrap;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+
+    .hidden_btn {
+        display: block;
+
+    }
+}
